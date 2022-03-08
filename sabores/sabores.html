@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sabores</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            *{
+                margin: 0px;
+                padding: 0px;
+                font-family: poppins;
+                box-sizing: border-box;
+            }
+            ul{
+                list-style: none;
+            }
+            a{
+                text-decoration: none;
+            }
+            body{
+                margin: 0px;
+                padding: 0px;
+                font-family: poppins;
+                background-color: rgba(255, 255, 255, 0.15);
+                font-weight: 400;
+                background: linear-gradient(45deg, #FEF7DC, #E6DDC6, #C2B8A3, #FEF7DC);
+                background-size: 300% 300%;
+                animation: colors 12s ease infinite;
+            }
+            @keyframes colors{
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
+            #pizzaria{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 40px;
+                border-top: 1px solid rgba(0, 0, 0, 0.05);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            }
+            .pizzaria-heading{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+            }
+            .pizzaria-heading span{
+                color: #f33c3c;
+            }
+            .pizzaria-heading h3{
+                font-size: 2.4rem;
+                color: #2b2b2b;
+                font-weight: 600;
+            }
+            .pizzaria-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 20px 0px;
+                flex-wrap: wrap;
+            }
+
+            .pizzaria-box{
+                width:350px;
+                background-color: #ffffff;
+                border: 1px solid #ececec;
+                margin: 20px 20px;
+
+            }
+            .pizzaria-img{
+                width:100%;
+                height: auto;
+            }
+            .pizzaria-img img{
+                width:100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+            .pizzaria-text{
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+            }
+            .pizzaria-text span{
+                color: #f33c3c;
+                font-size: 0.9rem;
+            }
+            .pizzaria-text .pizzaria-title{
+                font-size: 1.3rem;
+                font-weight: 500;
+                color: #272727;
+            }
+            .pizzaria-text p{
+                color: #9b9b9b;
+                font-size: 0.9rem;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin: 20px 0px;
+            }
+            .pizzaria-text a{
+                color: #0f0f0f;
+            }
+            .pizzaria-text a:hover{
+                color: #c74242;
+                transition: all ease 0.3s;
+            }
+
+
+            @media(max-width:1250px){
+
+                .pizzaria-box{
+                    width: 300px;
+                }
+            } 
+            @media(max-width:1100px){
+                .pizzaria-box{
+                    width:70%;
+                }
+            }
+
+            @media(max-width:550px){
+            
+                .pizzaria-box{
+                    margin: 20px 10px;
+                    width: 100%;
+                }
+                #pizzaria{
+                    padding:20px;
+                }
+            }
+        </style>
+	</head>
+	
+	<body>
+        <section id="pizzaria">
+
+                <div class="pizzaria-heading">
+                    <span>Sabores de pizza</span>
+                    <h3> Pizzaria Unip Donimos </h3>
+                </div>
+                    
+                <div class="pizzaria-container">
+    <!--Box1-->
+                    <div class="pizzaria-box">
+
+                        <div class="pizzaria-img">
+                            <img src="https://agendasorocaba.com.br/wp-content/uploads/2020/01/dom-angelo-pizza-sabor-pepperoni.jpg" alt="pizzaria">
+                        </div>
+
+                        <div class="pizzaria-text">
+                            <span>R$50</span>
+                            <a href="#" class="pizzaria-tittle">Calabresa</a>
+                            <p>Pizza borda a gosto com muita calabresa de ótima qualidade</p>
+                            <a href="#">Compre Agora</a>
+                        </div>
+                    </div>
+    <!--Box2-->
+                    <div class="pizzaria-box">
+
+                        <div class="pizzaria-img">
+                            <img src="https://agendasorocaba.com.br/wp-content/uploads/2021/11/pizza.jpg" alt="pizzaria">
+                        </div>
+
+                        <div class="pizzaria-text">
+                            <span>R$50</span>
+                            <a href="#" class="pizzaria-tittle">Muçarela</a>
+                            <p>Pizza borda a gosto com queijo de ótima qualidade</p>
+                            <a href="#">Compre Agora</a>
+                        </div>
+                    </div>
+    <!--Box3-->
+                    <div class="pizzaria-box">
+
+                        <div class="pizzaria-img">
+                            <img src="wallpaper.jpg" alt="pizzaria">
+                        </div>
+
+                        <div class="pizzaria-text">
+                            <span>R$60</span>
+                            <a href="#" class="pizzaria-tittle">Camarão com Catupiry</a>
+                            <p>Pizza borda a gosto com camarões grandes e catupiry de altíssima qualidade</p>
+                            <a href="#">Compre Agora</a>
+                        </div>
+                    </div>
+                </div>
+            <footer class="footer">
+                <address>
+                    Criação e Desenvolvimento: <a href="renankor5@gmail.com">Renan Kovachich</a>
+                    &copy; 2022 - <a href="www.unip.br">Unip</a>
+                </address>
+            </footer>
+        </section>
+	</body>
+</html>
